@@ -263,3 +263,55 @@ section{
     transform: scale(1.1) translateY(5px);
 
 }
+
+header.sticky{
+
+    background: $bg-color;
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+
+}
+
+.about{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.about-img img{
+
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.about-text h2{
+
+    font-size: $h2-font;
+    line-height: 1;
+
+}
+
+.about-text h4{
+
+    font-size: 24px;
+    font-weight: 500;
+    color: $text-color;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+
+}
+
+.about-text p{
+
+    color: $second-color;
+    font-size: $p-font;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+
+}
