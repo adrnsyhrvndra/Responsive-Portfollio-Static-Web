@@ -480,4 +480,100 @@ header.sticky {
 .contact-form .submit:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.end {
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #2a2a2a;
+}
+
+.last-text p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.top i {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #fff;
+  background: #ff4d05;
+}
+
+@media (max-width: 1480px) {
+  header {
+    padding: 12px 2.5%;
+    transition: 0.1s;
+  }
+  header.sticky {
+    padding: 10px 2.5%;
+    transition: 0.1s;
+  }
+  section {
+    padding: 110px 3% 60px;
+  }
+  .end {
+    padding: 15px 3%;
+  }
+}
+@media (max-width: 1100px) {
+  :root {
+    transition: 0.1s;
+  }
+  .home-text h3 {
+    font-size: 2.5rem;
+  }
+  .home {
+    height: 87vh;
+  }
+}
+@media (max-width: 920px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 840px) {
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #2a2a2a;
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    color: #fff;
+  }
+  .navlist a:hover {
+    color: #ff4d05;
+  }
+  .navlist a.active {
+    color: #fff;
+  }
+  .navlist.open {
+    top: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
